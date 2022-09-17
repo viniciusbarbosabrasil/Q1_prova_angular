@@ -1,0 +1,103 @@
+
+<div class="Conceitos">
+    <h1 class="titulo"> Conceitos Básicos em Cibersegurança </h1>
+    
+    <app-imagem imagem="assets/img01_conc.jpg" style="float:right;margin-left: 20px;;"></app-imagem>
+    
+    <!--<img class="imagem_conc3" name="bannerADrotator" style="float: right">-->
+    <div>
+        <h1 class="subtitulo"> {{ sub1 }}</h1>
+        
+        <app-paragrafos valor='{{ p1 }}'></app-paragrafos>
+        <app-imagem imagem="assets/img15.jpg" style="float:left;margin-right: 20px;"></app-imagem>
+    <!--  <img class="imagem_conc" src="assets/img01_conc.jpg" alt="Conceitos" style="float: right">-->
+        <h1 class="subtitulo">{{ sub2 }}</h1>
+
+        
+        <p class="paragrafo">{{ p2.paragrafo }} <br>
+            {{ p2.paragrafo2 }} <br> <br>
+            • {{ p2.item1 }}<br>
+            • {{ p2.item2 }}<br>
+            • {{ p2.item3 }}</p>
+
+        <app-paragrafos valor='{{ p3 }}'></app-paragrafos>
+    </div>
+
+    <div class="container">
+        <div class="row" style="display: inline-block">
+            <!--<section class="position_text_conf">-->
+            <div class="botao">
+                <app-botao (click)="toggleC()" botao="Confidencialidade"></app-botao>
+                <app-botao (click)="toggleI()" botao="Integridade"></app-botao>
+                <app-botao (click)="toggleD()" botao="Disponibilidade"></app-botao>
+            </div>
+                <!--<button class="button" onclick="Confidencialidade()" id="btnLeiaMais1">Confidencialidade</button>-->
+                <div *ngIf = "toDisplayC" class="col" >
+                    <!--<p class="paragrafo"><span id="pontos1">A Confidencialidade...</span>-->
+                        <app-imagem imagem="assets/img02_conc.JPG" style="float: right"></app-imagem>
+                        <app-paragrafos valor='{{ p4 }}'></app-paragrafos>
+                        <!--<app-imagem imagem="assets/img02_conc.JPG" style="float: right"></app-imagem>-->
+                        <!--<span id="mais1"><img class="imagem_conc2" src="assets/img02_conc.JPG" alt="Conceitos" style="float: right"></span>-->
+                </div>
+            <!--</section>
+            <section class="position_text_integ">
+                <button class="button" onclick="Integridade()" id="btnLeiaMais2">Integridade</button>-->
+                <!--<app-botao (click)="toggleI()" ></app-botao>-->
+                <div *ngIf = "toDisplayI" class="col">
+                    <!--<p class="paragrafo"><span id="pontos2">A Integridade...</span>-->
+                        <app-imagem imagem="assets/img04_conc.JPG" style="float: right"></app-imagem>
+                        <app-paragrafos valor='{{ p5 }}'></app-paragrafos>
+                        <!--<app-imagem imagem="assets/img04_conc.JPG" style="float: right"></app-imagem>-->
+                        <!--<span id="mais2"><img class="imagem_conc2" src="assets/img04_conc.JPG" alt="Conceitos" style="float: right"></span>-->
+                </div>
+            <!--</section>
+            <section class="position_text_disp">
+                <button class="button" onclick="Disponibilidade()" id="btnLeiaMais3">Disponibilidade</button>-->
+                <!--<app-botao (click)="toggleD()" ></app-botao>-->
+                <div *ngIf = "toDisplayD" class="col">
+                    <!--<p class="paragrafo2"><span id="pontos3">A Disponibilidade...</span>-->
+                        <app-imagem imagem="assets/img03_conc.JPG" style="float: right"></app-imagem>
+                        <app-paragrafos valor='{{ p6 }}'></app-paragrafos>
+                        <!--<app-imagem imagem="assets/img03_conc.JPG" style="float: right"></app-imagem>-->
+                        <!--<span id="mais3"><img class="imagem_conc2" src="assets/img03_conc.JPG" alt="Conceitos" style="float: right"></span>-->
+                </div>
+            <!--</section>-->
+        </div>
+    </div>
+    <div>
+        <br> <br>
+        <h1 class="paragrafo">Além dos pilares outros conceitos importantes para o setor de Cibersegurança são:</h1>
+
+
+        <h1 class="subtitulo"> 1. Firewall</h1>
+        <img class="imagem_conc5" src="assets/img08_conc.JPG" alt="Conceitos" style="float: right">
+        <app-paragrafos valor='{{ p7 }}'></app-paragrafos>
+
+        <h1 class="subtitulo"> 2. Ataques de negação de serviço</h1>
+        <img class="imagem_conc5" src="assets/img07_conc.JPG" alt="Conceitos" style="float: right">
+        <app-paragrafos valor='{{ p8 }}'></app-paragrafos>
+
+        <h1 class="subtitulo"> 3. Criptografia</h1>
+        <img class="imagem_conc5" src="assets/img06_conc.JPG" alt="Conceitos" style="float: right">
+        <app-paragrafos valor='{{ p9 }}'></app-paragrafos>
+
+        <h1 class="subtitulo"> 4. Assinatura digital</h1>
+        <img class="imagem_conc5" src="assets/img09_conc.JPG" alt="Conceitos" style="float: right">
+        <app-paragrafos valor='{{ p10 }}'></app-paragrafos>
+
+        <h1 class="subtitulo"> 5. Defesa em profundidade</h1>
+        <img class="imagem_conc5" src="assets/img11_conc.jpg" alt="Conceitos" style="float: right">
+        <app-paragrafos valor='{{ p11 }}'></app-paragrafos>
+
+        <h1 class="subtitulo"> 6. Políticas, Padrões, Procedimentos e Diretrizes</h1>
+        <img class="imagem_conc5" src="assets/img12_conc.jpg" alt="Conceitos" style="float: right">
+        <p class="paragrafo">• {{ p12.politicas }} <br>
+            • {{ p12.padroes }} <br>
+            • {{ p12.procedimentos }} <br>
+            • {{ p12.diretrizes }} </p>
+    </div>
+
+
+</div>
+<app-rodape></app-rodape>
+

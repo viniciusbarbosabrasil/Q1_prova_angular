@@ -1,0 +1,50 @@
+<app-imagem imagem="assets/habilidades.jpg" style="float:right;position:relative;top:-100px"></app-imagem>
+<div id=hab class="habilidade">
+    <h1 class="titulo">Habilidades</h1>
+    <p class="paragrafo">Para trabalhar na área de Cibersegurança, são necessárias algumas habilidades, como: </p>
+    <div class="container">
+    <div class="row">
+        <div class="col">
+        <app-topicos imagem="assets/cadeado.png" titulo = 'Sistema Linux' texto="{{ linux }}"></app-topicos>
+        </div>
+        <div class="col">
+        <app-topicos imagem="assets/cadeado.png" titulo = 'Noções de Rede' texto="{{ rede }}"></app-topicos>
+        </div>
+        <div class="col">
+        <app-topicos imagem="assets/cadeado.png" titulo = 'Programação' texto="{{ prog }}"></app-topicos>
+        </div>
+        <div class="col">
+        <app-topicos imagem="assets/cadeado.png" titulo = 'Vulnerabilidades' texto="{{ vuln }}"></app-topicos>
+        </div>
+        <div class="col">
+        <app-topicos imagem="assets/cadeado.png" titulo = 'Ferramentas' texto="{{ ferramentas }}"></app-topicos>
+        </div>
+    </div>
+    <div id="row2" class="row">
+        <div class="col">
+            <app-topicos imagem="assets/cadeado.png" titulo = 'Criatividade' texto="{{ criatividade }}"></app-topicos>
+        </div>
+        <div class="col">
+            <app-topicos imagem="assets/cadeado.png" titulo = 'Fundamentos de Computação em Nuvem' texto="{{ fundamentos }}"></app-topicos>
+        </div>
+        <div class="col">
+            <app-topicos imagem="assets/cadeado.png" titulo = 'Script de shell' texto="{{ shell }}"></app-topicos>
+        </div>
+        <div class="col">
+            <app-topicos imagem="assets/cadeado.png" titulo = 'Versionamento' texto="{{ vers }}"></app-topicos>
+        </div>
+    </div>
+    <div id="row3" class="row">
+        <div class="col">
+            <app-topicos imagem="assets/cadeado.png" titulo = 'Troca de conhecimento' texto="{{ troca }}"></app-topicos>
+        </div>
+        <div class="col">
+            <app-topicos imagem="assets/cadeado.png" titulo = 'Normas e Procedimentos' texto="{{ normas }}"></app-topicos>
+        </div>
+        <div class="col" >
+            <app-topicos imagem="assets/cadeado.png" titulo = 'Visão global' texto="{{ visao }}"></app-topicos>
+        </div>
+    </div>
+    </div>
+    </div>
+    <app-rodape></app-rodape>

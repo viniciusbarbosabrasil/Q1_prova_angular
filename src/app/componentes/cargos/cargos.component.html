@@ -1,0 +1,38 @@
+<section class="container" id="dsp">
+    <div class="row ">
+        <div class="col align-self-center btn">
+            <button (click)='getPrev()' class="btn_ant">
+                <i class="btn_img"><b><</b></i>
+            </button>
+        </div>
+        <div class="col-8 aat">
+
+            <div class="row">
+                <div class="col-8">
+                    <h2 class="subtitulos_card" id="nomeCargo">{{ cargos[i].nomeCargo }}</h2>
+                    <p class="texto_card" id="resumoCargo">{{ cargos[i].resumo }}</p>
+                </div>
+                <div class="col align-self-center">
+                    <div class="img_aat">
+                      <!--<p>{{ getFrase()[1] }}</p>-->
+                        <img id="cargo_img" src="{{ cargos[i].cargo_img }}" alt="funcao">
+                    </div>
+                </div>
+            </div>
+
+            <p class="texto_card" id="requisitosCargo">{{ cargos[i].requisitos }}</p>
+            <h3 class="subtitulos_card">Atribuições</h3>
+            <ul>
+                <li class="texto_card" id="atrib1Cargo">{{ cargos[i].atrib1[0] }}</li>
+                <li class="texto_card" id="atrib2Cargo">{{ cargos[i].atrib1[1] }}</li>
+                <li class="texto_card" id="atrib3Cargo">{{ cargos[i].atrib1[2] }}</li>
+            </ul>
+        </div>
+        <div class="col align-self-center btn">
+            <button (click)='getNext()' class="btn_prx">
+                <i class="btn_img"><b>></b></i>
+            </button>
+        </div>
+    </div>
+    
+</section>

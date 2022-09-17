@@ -1,0 +1,25 @@
+.imagem_rod{
+height: 20px;
+width: auto;
+}
+.rodape{
+background-color: white;
+height: 100px;
+}
+.rodape{
+padding: 50px;
+margin-left: 300px;
+}
+.rodape li{
+display: inline;
+float: left;
+margin-top: 10px;
+}
+.rodape a{
+color: black;
+text-decoration: none;
+}
+.rodape a:hover {
+color: pink;
+text-decoration: none;
+}
